@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html lang='en'>
+<head>
+	<title>Компас Казани</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="compasKazanStyle.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<!--- Your content goes here -->
+<div class='icons'>
+	<a href="historySlides/HistoryPage.html" class="historyButton"></a>
+	<a href="food/food.html" class="foodButton"></a>
+	<a href="kazanMap/kazansMap.html" class="kazanMap"></a>
+</div>
+<div class='icons'>
+	<a href="infoUs/infoUs.html" class="infoUsButton"></a>
+	<a href="china/china.html" class="chinaButton"></a>
+	<a href="advice/advice.html" class="adviceButton"></a>
+</div>
+
+<div class='pre-loader'>
+    <img class='loading-gif' alt='loading' src="PreloaderStart_1_1.gif"/>
+</div>
+
+<!-- js to hide preloader loading is done -->
+<script type='text/javascript'>
+    window.addEventListener('load', function () {
+        document.querySelector('.pre-loader').className += ' hidden';
+    });
+</script>
+</body>
+</html>

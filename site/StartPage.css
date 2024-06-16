@@ -1,0 +1,23 @@
+
+.bodyStart {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+	width: 100%;
+	background: #000000;
+}
+
+.buttonStart{
+	background: url(buttonStart_2.jpg);
+    display: block; 
+    width: 255px; 
+    height: 253px; 
+}
+
+.buttonStart:hover {
+    background: url(buttonStart_1.jpg); /* Путь к файлу с заменяемым рисунком  */
+}

@@ -1,0 +1,97 @@
+.loading-gif {
+	max-width: 500px;
+}
+
+.pre-loader {
+	position: fixed;
+	z-index: 100; /** make sure this is the highest value compared to all other divs **/
+	top: 0;
+	left: 0;
+	background: #191f26;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+	width: 100%;
+}
+
+.pre-loader.hidden {
+	animation: fadeOut 3s; /** change to 1s */
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.icons {
+	display: inline-block;
+}
+
+.carousel {
+	display: inline-block;
+	position: relative;
+	width: 633px;
+	height: 689px;
+}
+ 
+.carousel ul{
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+}
+ 
+ .slide{
+	position:absolute;
+	opacity: 0;
+	inset: 0;
+ }
+ 
+ .slide[data-active]{
+	opacity: 1;
+	z-index: 1;
+ }
+ 
+ .slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+ }
+  
+.carousel-button{
+	position:absolute;
+	z-index: 2;
+	font-size: 4rem;
+	background: none;
+	border: none;
+
+	color: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	border-radius: .25rem;
+	padding: 0 .5rem;
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+	color: white;
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button.next{
+	top: 30%;
+}
+
+.carousel-button.prev{
+	top: 50%;
+}
+
+.links{
+	display: block;
+	float:right;
+	margin-right: 15%;
+	margin-top: 15%;
+}

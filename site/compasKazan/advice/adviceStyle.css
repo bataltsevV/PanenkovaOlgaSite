@@ -1,0 +1,83 @@
+.loading-gif {
+	max-width: 500px;
+}
+
+.pre-loader {
+	position: fixed;
+	z-index: 100; /** make sure this is the highest value compared to all other divs **/
+	top: 0;
+	left: 0;
+	background: #191f26;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+	width: 100%;
+}
+
+.pre-loader.hidden {
+	animation: fadeOut 3s; /** change to 1s */
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+body, html {
+	margin: 0;
+}
+
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+
+.icons {
+	display: inline-block;
+}
+
+.carousel {
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+}
+ 
+.carousel ul{
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+}
+ 
+.slide{
+	position:absolute;
+	opacity: 0;
+	inset: 0;
+ }
+ 
+.slide[data-active]{
+	opacity: 1;
+	z-index: 1;
+ }
+ 
+ .slide img {
+	display: block;
+	justify-content: center;
+ }
+ 
+.button{
+	background: url(wiseMan.jpg);
+	background-position: center;
+    display: inline-block;
+    width: 300px; 
+    height: 300px; 
+	border:none;
+	top:30%;
+	margin-left:80%;
+}
+
+.button:hover {
+	background: url(wiseMan1.jpg);
+}

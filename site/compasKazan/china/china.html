@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>carousel</title>
+	<link href="chinaStyle.css" rel="stylesheet">
+</head>
+<body>
+	<center>
+		<img alt='picture1' src="Picture1.jpg"/>
+	</center>
+	<center  class="picture">
+		<img alt='picture2' src="Picture2.jpg"/>
+	</center>
+	<center class="vidos">
+	<video width="1280" height="720" controls>
+	  <source src="video.mp4" type="video/mp4">
+	</video>
+	</center>
+	<div class='pre-loader'>
+		<img class='loading-gif' alt='loading' src="Preloader.gif"/>
+	</div>
+
+	<!-- js to hide preloader loading is done -->
+	<script type='text/javascript'>
+		window.addEventListener('load', function () {
+			document.querySelector('.pre-loader').className += ' hidden';
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+.loading-gif {
+	max-width: 500px;
+}
+
+.pre-loader {
+	position: fixed;
+	z-index: 100; /** make sure this is the highest value compared to all other divs **/
+	top: 0;
+	left: 0;
+	background: #191f26;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+	width: 100%;
+}
+
+.pre-loader.hidden {
+	animation: fadeOut 3s; /** change to 1s */
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.icons {
+	display: inline-block;
+	background:  transparent;
+	background-position: center;
+	background-size: cover;
+	border:none; /* В ожидании набирающего популярность темного режима, рамка черного цвета */
+	color: #333;
+	text-decoration: none;
+	text-align: center;
+	margin-left:20%;
+}
+
+.historyButton{
+	background: url(historyButton.jpg);
+	background-position: center;
+    display: inline-block;
+    width: 325px; 
+    height: 332px; 
+	border:none;
+}
+
+.historyButton:hover {
+	background: url(historyButton1.jpg);
+}
+
+.foodButton{
+	background: url(foodButton.jpg);
+	background-position: center;
+    display: inline-block;
+    width: 325px; 
+    height: 332px; 
+	border:none;
+}
+
+.foodButton:hover {
+	background: url(foodButton1.jpg);
+}
+
+.kazanMap{
+	background: url(kazanMap.jpg);
+	background-position: center;
+    display: inline-block;
+    width: 325px; 
+    height: 332px; 
+	border:none;
+}
+
+.kazanMap:hover {
+	background: url(kazanMap1.jpg);
+}
+
+.infoUsButton{
+	background: url(infoUsButton.jpg);
+	background-position: center;
+    display: inline-block;
+    width: 325px; 
+    height: 332px; 
+	border:none;
+}
+
+.infoUsButton:hover {
+	background: url(infoUsButton1.jpg);
+}
+
+.chinaButton{
+	background: url(chinaButton.jpg);
+	background-position: center;
+    display: inline-block;
+    width: 325px; 
+    height: 332px; 
+	border:none;
+}
+
+.chinaButton:hover {
+	background: url(chinaButton1.jpg);
+}
+
+.adviceButton{
+	background: url(adviceButton.jpg);
+	background-position: center;
+    display: inline-block;
+    width: 325px; 
+    height: 332px; 
+	border:none;
+}
+
+.adviceButton:hover {
+	background: url(adviceButton1.jpg);
+}

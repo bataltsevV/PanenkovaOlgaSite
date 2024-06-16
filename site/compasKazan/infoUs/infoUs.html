@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>carousel</title>
+	<link href="infoUsStyle.css" rel="stylesheet">
+	<script src="index.js" defer></script>
+</head>
+<body>
+<div class="icons">	
+	<div class="carousel">
+		<button class ="carousel-button next" onclick="onNext()">
+		&#8613;
+		</button>
+		<button class ="carousel-button prev" onclick="onPrev()">
+		&#8615;
+		</button>
+		<ul class="slides">
+			<li class="slide" data-active>
+			  <img src="team1.jpg" alt="Image 1">
+			</li>
+			<li class="slide">
+			  <img src="team2.jpg" alt="Image 2">
+			</li>
+			<li class="slide">
+			  <img src="team3.jpg" alt="Image 3">
+			</li>
+			<li class="slide">
+			  <img src="team4.jpg" alt="Image 4">
+			</li>
+			<li class="slide">
+			  <img src="team5.jpg" alt="Image 5">
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+<div class="links">
+	<a href="https://vk.com/olkamilik" target="_blank">
+	<img src="vk.jpg" border="0" usemap="#map"/>
+	</a>
+	<a href="https://t.me/glazamikazani" target="_blank">
+	<img src="tg.jpg" border="0" usemap="#map"/>
+	</a>
+</div>
+	<div class='pre-loader'>
+		<img class='loading-gif' alt='loading' src="Preloader.gif"/>
+	</div>
+
+	<!-- js to hide preloader loading is done -->
+	<script type='text/javascript'>
+		window.addEventListener('load', function () {
+			document.querySelector('.pre-loader').className += ' hidden';
+		});
+	</script>
+</body>
+</html>

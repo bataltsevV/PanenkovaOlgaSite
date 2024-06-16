@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>carousel</title>
+	<link href="foodStyle.css" rel="stylesheet">
+	<script src="index.js" defer></script>
+</head>
+<body>
+<div class="icons">
+	<div class="carousel">
+		<button class ="carousel-button next" onclick="onNext()">
+		&#8613;
+		</button>
+		<button class ="carousel-button prev" onclick="onPrev()">
+		&#8615;
+		</button>
+		<ul class="slides">
+			<li class="slide" data-active>
+			  <img src="food1.jpg" alt="Image 1">
+			</li>
+			<li class="slide">
+			  <img src="food2.jpg" alt="Image 2">
+			</li>
+			<li class="slide">
+			  <img src="food3.jpg" alt="Image 3">
+			</li>
+			<li class="slide">
+			  <img src="food4.jpg" alt="Image 4">
+			</li>
+			<li class="slide">
+			  <img src="food5.jpg" alt="Image 5">
+			</li>
+			<li class="slide">
+			  <img src="food6.jpg" alt="Image 6">
+			</li>
+		</ul>
+	</div>
+	<div class="foodMap">
+		<img src="foodMap.jpg" width="700" height="700" border="0" usemap="#map"/>
+		<map name="map">
+            <area name="Chirem" shape="rect" coords="130,105,195,160" id="Chirem" href="https://vk.com/cheerem_tatar" target="_blank"/>
+            <area name="Kystybay" shape="rect" coords="175,220,235,275" id="Kystybay" href="https://vk.com/kstbcafe" target="_blank"/>
+            <area name="Skazka" shape="rect" coords="220,290,270,340" id="Skazka" href="https://skazkakzn.ru/" target="_blank"/>
+            <area name="RannyayaPteshka" shape="rect" coords="260,225,310,275" id="RannyayaPteshka" href="https://t.me/coffeeptashka" target="_blank"/>
+            <area name="TuganAvylym" shape="rect" coords="440,505,500,555" id="TuganAvylym" href="https://tugan-avilim.ru/" target="_blank"/>
+        </map>
+	</div>	
+	<div class='pre-loader'>
+		<img class='loading-gif' alt='loading' src="Preloader.gif"/>
+	</div>
+</div>
+	<!-- js to hide preloader loading is done -->
+	<script type='text/javascript'>
+		window.addEventListener('load', function () {
+			document.querySelector('.pre-loader').className += ' hidden';
+		});
+	</script>
+</body>
+</html>

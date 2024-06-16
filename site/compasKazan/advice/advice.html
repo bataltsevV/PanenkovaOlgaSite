@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>carousel</title>
+	<link href="adviceStyle.css" rel="stylesheet">
+	<script src="wiseman.js" defer></script>
+</head>
+<body>
+<div class="icons">	
+	<div class="carousel">
+		<ul class="slides">
+			<li class="slide" data-active>
+			  <img src="Slide1.png" alt="Image 1">
+			</li>
+			<li class="slide">
+			  <img src="Slide2.png" alt="Image 2">
+			</li>
+			<li class="slide">
+			  <img src="Slide3.png" alt="Image 3">
+			</li>
+			<li class="slide">
+			  <img src="Slide4.png" alt="Image 4">
+			</li>
+			<li class="slide">
+			  <img src="Slide5.png" alt="Image 5">
+			</li>
+			<li class="slide">
+			  <img src="Slide6.png" alt="Image 6">
+			</li>
+			<li class="slide">
+			  <img src="Slide7.png" alt="Image 7">
+			</li>
+			<li class="slide">
+			  <img src="Slide8.png" alt="Image 8">
+			</li>
+		</ul>
+	</div>
+</div>
+<div>
+<a class ="button" onclick="onNext()"></a>
+</div>
+
+<div class='pre-loader'>
+	<img class='loading-gif' alt='loading' src="Preloader.gif"/>
+</div>
+
+<!-- js to hide preloader loading is done -->
+<script type='text/javascript'>
+	window.addEventListener('load', function () {
+		document.querySelector('.pre-loader').className += ' hidden';
+	});
+</script>
+</body>
+</html>
